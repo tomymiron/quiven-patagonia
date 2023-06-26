@@ -1,0 +1,358 @@
+@keyframes animate {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+body{
+    max-height: 200vh;
+    max-width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+@media screen and (min-width: 643px) {
+    .desktopView{
+        position: absolute;
+        z-index: -1;
+        height: 200vh;
+        width: 100vw;
+    }.desktopView .mainBackgroundContainer{
+        position:-webkit-sticky;
+        position:sticky;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        overflow: hidden;
+        background: transparent !important;
+    }.desktopView .mainBackgroundContainer .mainBackground{
+        transform: translateX(40%) scale(1.3);
+    }
+    .desktopView .otherMainContainer{
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: left;
+        padding-left: 80px;
+        flex-direction: column;
+    }.desktopView .otherMainContainer .mainH1{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(110px, 10vw);
+        line-height: auto;
+        text-align: center;
+        display: inline;
+        margin-left: -50%;
+        background: linear-gradient(90.19deg, #FFFFFF -12%, rgba(255, 255, 255, 0) 130.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }.desktopView .otherMainContainer .mainH3{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(35px, 2vw);
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.22em;
+        margin-left: -50%;
+        color: #7A2D0C;
+    }.desktopView .otherMainContainer .mainAwardContainer{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        opacity: .5;
+        overflow: hidden;
+    }.desktopView .otherMainContainer .mainAwardContainer .mainaward{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .desktopView .boxSwipeDown{
+        position: absolute;
+        z-index: 10000;
+        top: 82vh;
+        left: 50vw; 
+        transform: rotate(180deg);
+    }
+    .desktopView .boxSwipeDown span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+  
+    .desktopView .boxSwipeDown span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+  
+    .desktopView .boxSwipeDown span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    .desktopView .indicator{
+        position: absolute;
+        left: 50vw;
+        top: 85vh;
+        font-size: 15px;
+        transform: translateX(-50%);
+        color: rgb(199, 199, 199);
+    }
+}
+@media screen and (max-width: 642px) {
+
+    .mobileView{
+        position: absolute;
+        z-index: -1;
+        height: 200vh;
+        width: 100vw;
+    }.mobileView .mainBackgroundContainer{
+        position:-webkit-sticky;
+        position:sticky;
+        z-index: -1;
+        filter: brightness(50%);
+        top: 0;
+        width: 100vw;
+        overflow: hidden;
+        background: transparent !important;
+    }
+    .mobileView .otherMainContainer{
+        position: absolute;
+        display: flex;
+        top: -40px;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }.mobileView .otherMainContainer .mainH1{
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(110px, 12vw);
+        line-height: 90%;
+        text-align: center;
+        background: #f5f5f5;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        min-height: 120px;
+    }.mobileView .otherMainContainer .mainH3{
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.22em;
+        color: #ac4d25;
+    }.mobileView .otherMainContainer .mainAwardContainer{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        opacity: .5;
+        overflow: hidden;
+    }.mobileView .otherMainContainer .mainAwardContainer .mainaward{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .mobileView .boxSwipeDown{
+        position: absolute;
+        z-index: 10000;
+        top: 70vh;
+        left: 50vw; 
+        transform: rotate(180deg);
+    }
+    .mobileView .boxSwipeDown span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+  
+    .mobileView .boxSwipeDown span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+  
+    .mobileView .boxSwipeDown span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    .mobileView .indicator{
+        position: absolute;
+        left: 50vw;
+        top: 74vh;
+        font-size: 15px;
+        transform: translateX(-50%);
+        color: rgb(199, 199, 199);
+    }
+
+    .mainContainer .subMenu{
+        margin: 25px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0.22em;
+    }.mainContainer .collapsableBox h4{
+        margin: auto 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }.mainContainer .collapsableContentInner p{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .mainContainer .collapsableContentInner .listOfWines{
+        padding: 0 0;
+    } 
+    .mainContainer .collapsableContentInner .winesListHeader{
+        font-size: 24px;
+        margin: 10px 10px;
+    }.mainContainer .collapsableContentInner .winesList{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+.mainContainer{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #250b07;
+    padding-bottom: 50px;
+}.mainContainer .subMenu{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Wire One', sans-serif;
+    font-size: 35px;
+    align-self: flex-start;
+    letter-spacing: 0.22em;
+    color: #FFFFFF;
+}.mainContainer .collapsible{
+    background-color: #49271d;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px auto 0;
+    width: 95%;
+    height: 60px;
+}.mainContainer .collapsible h4{
+    font-family: 'Roboto', sans-serif;
+    margin: auto 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #b98053;
+}.mainContainer .content{
+    width: 95%;
+    background-color: #1a0601;
+    border-radius: 0px 0px 17px 17px;
+}.menu ul li p{
+    line-height: normal !important;
+}.mainContainer .content li{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}.mainContainer .content ul{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}.mainContainer .content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px){
+    .mainContainer .content .listOfWines{
+        padding: 0 30px;
+    }
+}
+
+.mainContainer .content .winesListHeader{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin: 10px 10px;
+    font-weight: bold;
+}.mainContainer .content .winesList{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}.mainContainer .content .winesList .winery{
+    color: #868686;
+    font-size: 80%;
+}.mainContainer .content .winesList .price{
+    color: #F7B17D;
+    margin-left: 5px;
+}
+
+.mainBackgroundContainer{
+    display: flex;
+    justify-content: center;
+}.mainBackground{
+    height: 100vh;
+}
+
+
+.collapsible {
+    position: relative;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 80%;
+}.content {
+    position: relative;
+    padding: 0 18px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}

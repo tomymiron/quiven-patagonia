@@ -1,0 +1,13 @@
+body{
+    background-color: #030311;
+    opacity: 0.8;
+    background-image: radial-gradient(#9813a0 0.8500000000000001px, #030311 0.8500000000000001px);
+    background-size: 17px 17px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}.mainContainer{
+    margin: auto;
+    max-width: 400px;
+    width: 90vw;
+}

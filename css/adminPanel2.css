@@ -1,0 +1,145 @@
+body{
+    background-color: #2D0D08;
+}
+
+.mainContainer{
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}.mainTitle{
+    color: white;
+    font-size: min(10vw, 52px);
+}
+
+.mainContainer .addWinesContainer{
+    background-color: #794030;
+    margin: 15px auto -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: max-content;
+    height: 60px;
+}.mainContainer .addWinesContainer h4{
+    color: white;
+}.mainContainer .addCollapsableContent{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}.mainContainer .addCollapsableContent .collapsablecontentInner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    background-color: #3F221B;
+}.mainContainer .addCollapsableContent .collapsablecontentInner .mainContent{
+    width: 80%;
+    margin: 15px 0;
+}.mainContainer .addCollapsableContent .collapsablecontentInner .mainContent .formMultipleChoice{
+    width: 99%;
+    border-radius: 10px;
+    margin: 10px auto 15px;
+    height: auto;
+    background-color: white;
+}
+
+.mainContainer .editWinesContainer{
+    background-color: #794030;
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: max-content;
+    height: 60px;
+}.mainContainer .editWinesContainer h4{
+    color: white;
+}.mainContainer .editCollapsableContent{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}.mainContainer .editCollapsableContent .collapsablecontentInner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    background-color: #3F221B;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    padding: 15px;
+}
+
+.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowWinesContainer{
+    background-color: #303030;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 0 10px;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowWinesContainer h3{
+    color: white;
+    margin: auto;
+    font-size: 16px;
+}
+
+.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowWinesContainer .num1{
+    justify-self: left;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowWinesContainer .num2{
+    justify-self: center;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowWinesContainer .num3{
+    justify-self: right;
+}
+
+.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent{
+    width: 100%;
+    background-color: #6b6b6b;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont{
+    margin: auto;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont1{
+    max-width: 300px;
+    justify-self: left;
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont1 input{
+    width: 100%;
+    text-align: center;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont1 input:nth-child(2){
+    width: 100%;
+    margin-top:10px;
+}
+.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont2{
+    justify-self: center;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont2 input:nth-child(2){
+    width: 100%;
+    margin-left: 10px;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont3{
+    justify-self: right;
+    width: 100%;
+    max-width: 300px;
+}.mainContainer .editCollapsableContent .collapsablecontentInner .body .rowCollapsableContent .helper .cont3 input{
+    width: 100%;
+    height: 100%;
+}
+
+.logoutButton{
+    position: absolute;
+    z-index: 100;
+    top: 25px;
+    right: 25px;
+}

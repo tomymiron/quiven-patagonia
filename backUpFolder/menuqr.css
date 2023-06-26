@@ -1,0 +1,296 @@
+@keyframes animate {
+    0% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+body{
+    background-color: #000;
+    display: flex;
+}html{
+    scrollbar-color: #444 #999;
+    scrollbar-width: thin;
+}
+
+.swipeable{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    
+    z-index: 1;
+}.swipeable .mainContainer{
+    background-color: #2D0D08;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}.swipeable .mainContainer .subMenu{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Wire One', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 0.22em;
+    color: #FFFFFF;
+}.swipeable .mainContainer .collapsableBox{
+    background-color: #794030;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px auto;
+    
+    margin-bottom: 0;
+    width: 95%;
+    height: 60px;
+}.swipeable .mainContainer .collapsableBox h4{
+    font-family: 'Roboto', sans-serif;
+    margin: auto 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F7B17D;
+}.swipeable .mainContainer .collapsableContent{
+    width: 95%;
+    margin: 0 auto;
+    background-color: #3F221B;
+    border-radius: 0px 0px 17px 17px;
+}.swipeable .mainContainer .collapsableContentInner{
+    width: 100%;
+    margin: 0 auto;
+    background: #3F221B;
+    border-radius: 0px 0px 17px 17px;
+    padding: 5px 5px;
+}.swipeable .mainContainer .collapsableContentInner li{
+    color: white;
+}.swipeable .mainContainer .collapsableContentInner ul{
+    margin: 0;
+    margin-top: 10px;
+}
+.swipeable .mainContainer .collapsableContentInner p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.swipeable .mainContainer .collapsableContentInner .listOfWines{
+    padding: 0 0px;
+}@media screen and (min-width: 500px){
+    .swipeable .mainContainer .collapsableContentInner .listOfWines{
+        padding: 0 30px;
+    }  
+}
+.swipeable .mainContainer .collapsableContentInner .winesListHeader{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 10px 10px;
+    font-weight: bold;
+}.swipeable .mainContainer .collapsableContentInner .winesList{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}.swipeable .mainContainer .collapsableContentInner .winesList .winery{
+    color: #868686;
+    font-size: 80%;
+}.swipeable .mainContainer .collapsableContentInner .winesList .price{
+    color: #F7B17D;
+}
+
+
+@media screen and (max-width: 642px) {
+    .mobileView{
+        display: flex;
+        flex-direction: column;
+    }.mobileView .mainBackgroundContainer{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }.mobileView .mainBackground{
+        height: 100vh;
+    }.mobileView .mainH1{
+        position: fixed;
+        width: 100vw;
+        top: 40vh;
+        left: 0;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 57px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+    }.mobileView .mainH3{
+        position: fixed;
+        width: 100vw;
+        top: 30vh;
+        left: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.22em;
+        color: #88340f;
+    }.mobileView .mainAwardContainer{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        bottom: 0;
+        opacity: .5;
+        margin-top: 0;
+        margin-left: 10px;
+    }.mobileView .mainAward{
+        width: 110px;
+        height: auto;
+    }
+    
+    .swipeable .mainContainer .subMenu{
+        margin: 25px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: 0.22em;
+    }.swipeable .mainContainer .collapsableBox h4{
+        margin: auto 10px;
+        font-size: 18px;
+        line-height: 24px;
+    }.swipeable .mainContainer .collapsableContentInner p{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .swipeable .mainContainer .collapsableContentInner .listOfWines{
+        padding: 0 0;
+    } 
+    .swipeable .mainContainer .collapsableContentInner .winesListHeader{
+        font-size: 24px;
+        margin: 10px 10px;
+    }.swipeable .mainContainer .collapsableContentInner .winesList{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .mobileView .boxSwipeDown{
+        position: fixed;
+        top: 65vh;
+        left: 50vw; 
+    }
+    .mobileView .boxSwipeDown span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+  
+    .mobileView .boxSwipeDown span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+  
+    .mobileView .boxSwipeDown span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    .mobileView .indicator{
+        position: fixed;
+        left: 50vw;
+        top: 62vh;
+        font-size: 15px;
+        transform: translateX(-50%);
+        color: rgb(199, 199, 199);
+    }
+}
+@media screen and (min-width: 643px) {
+    .desktopView{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }.desktopView .mainBackgroundContainer{
+        position: fixed;
+        height: 100vh;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }.desktopView .mainBackgroundContainer .mainBackground{
+        width: max(90vw, 130vh);
+        transform: rotate(45deg);
+        position: fixed;
+        left: 30%;
+    }
+    .desktopView .otherMainContainer{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: left;
+        padding-left: 80px;
+        position: fixed;
+        flex-direction: column;
+    }.desktopView .otherMainContainer .mainH1{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(110px, 10vw);
+        line-height: auto;
+        text-align: center;
+        display: inline;
+        margin-left: -50%;
+
+        background: linear-gradient(90.19deg, #FFFFFF -12%, rgba(255, 255, 255, 0) 130.69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }.desktopView .otherMainContainer .mainH3{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: min(35px, 2vw);
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.22em;
+        margin-left: -50%;
+        color: #7A2D0C;
+    }.desktopView .otherMainContainer .mainAwardContainer{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        opacity: .5;
+        overflow: hidden;
+    }.desktopView .otherMainContainer .mainAwardContainer .mainaward{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .desktopView .indicator{
+        display: none;
+    }
+    .desktopView .boxSwipeDown{
+        display: none;
+    }
+}
+
